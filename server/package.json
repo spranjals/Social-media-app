@@ -20,7 +20,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "postinstall": "npm install -g nodemon",
     "build": "npm install"
   },
   "keywords": [],
