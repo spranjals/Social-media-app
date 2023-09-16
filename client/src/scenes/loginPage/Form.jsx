@@ -15,7 +15,7 @@ import { useDispatch } from "react-redux";
 import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
-import { FormatUnderlined } from "@mui/icons-material";
+// import { FormatUnderlined } from "@mui/icons-material";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
