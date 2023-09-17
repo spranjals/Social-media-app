@@ -18,6 +18,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const primaryDark = palette.primary.dark;
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
+  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
 
 
 
@@ -27,7 +28,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `${apiEndpoint}/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

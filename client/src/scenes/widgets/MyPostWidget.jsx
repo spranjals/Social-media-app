@@ -39,6 +39,9 @@ const MyPostWidget = ({ picturePath }) => {
 
   const handlePost = async () => {
     const formData = new FormData();
+    const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
+
+
     formData.append("userId", _id);
     formData.append("description", post);
     if (image) {
@@ -46,7 +49,7 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`http://localhost:3001/posts`, {
+    const response = await fetch(`${apiEndpoint}/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
