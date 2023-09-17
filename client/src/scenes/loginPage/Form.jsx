@@ -55,7 +55,7 @@ const Form = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
   const isLogin = pageType === "login";
   const isRegister = pageType === "register";
-  const apiEndpoint = "http://localhost:3001";
+  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
 
 
