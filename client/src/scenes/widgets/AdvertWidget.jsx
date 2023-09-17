@@ -8,7 +8,7 @@ const AdvertWidget = () => {
   const dark = palette.neutral.dark;
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
-  const imageUrlBase = process.env.REACT_APP_IMAGE_URL || "http://localhost:3001";
+  const imageUrlBase = process.env.REACT_APP_IMAGE_URL;
   return (
     <WidgetWrapper>
       <FlexBetween>

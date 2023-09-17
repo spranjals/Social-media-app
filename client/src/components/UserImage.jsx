@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
+const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
 const UserImage = ({ image, size = "60px" }) => {
   return (

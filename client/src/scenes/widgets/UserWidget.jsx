@@ -20,7 +20,7 @@ const UserWidget = ({ userId, picturePath }) => {
   const dark = palette.neutral.dark;
   const medium = palette.neutral.medium;
   const main = palette.neutral.main;
-  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
+  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
 
 

@@ -13,7 +13,7 @@ const ProfilePage = () => {
   const { userId } = useParams();
   const token = useSelector((state) => state.token);
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
-  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
+  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
   const getUser = async () => {
     const response = await fetch(`${apiEndpoint}/users/${userId}`, {

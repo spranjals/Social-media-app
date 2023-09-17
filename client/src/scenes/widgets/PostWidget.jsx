@@ -30,7 +30,7 @@ const PostWidget = ({
   const loggedInUserId = useSelector((state) => state.user._id);
   const isLiked = Boolean(likes[loggedInUserId]);
   const likeCount = Object.keys(likes).length;
-  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
+  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
   const { palette } = useTheme();
   const main = palette.neutral.main;

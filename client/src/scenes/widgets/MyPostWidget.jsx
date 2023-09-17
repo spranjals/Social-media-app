@@ -39,7 +39,7 @@ const MyPostWidget = ({ picturePath }) => {
 
   const handlePost = async () => {
     const formData = new FormData();
-    const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || "http://localhost:3001";
+    const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
 
     formData.append("userId", _id);
