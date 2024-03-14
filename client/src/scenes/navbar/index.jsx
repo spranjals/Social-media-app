@@ -60,7 +60,7 @@ const Navbar = () => {
             },
           }}
         >
-          Sōshi
+          Sōsharu
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
