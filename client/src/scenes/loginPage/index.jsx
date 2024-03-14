@@ -36,7 +36,7 @@ const LoginPage = () => {
         }}
       >
         <Typography fontWeight="bold" fontSize="32px" color="green">
-          Sōshi
+          Sōsharu
         </Typography>
       </Box>
 
@@ -48,7 +48,7 @@ const LoginPage = () => {
         backgroundColor="rgba(128, 128, 128, 0.6)"
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }} color="white">
-          Welcome to Sōshi, The One Piece World!
+          Welcome to Sōsharu, The One Piece World!
         </Typography>
         <Form />
       </Box>
